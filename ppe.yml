@@ -1,0 +1,21 @@
+name: ppe
+channels:
+  - conda-forge
+dependencies:
+  - cartopy
+  - dask
+  - numpy
+  - pandas
+  - scipy
+  - xarray
+  - ipykernel
+  - scikit-learn
+  - h5netcdf
+  - netcdf4
+  - flox
+  - statsmodels
+  - pynco
+  - xesmf
+  - ipywidgets
+  - ipympl
+prefix: /glade/work/jnug/conda-envs/ppe

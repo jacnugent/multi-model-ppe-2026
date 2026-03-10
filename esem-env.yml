@@ -1,0 +1,15 @@
+name: esem-env
+channels:
+  - conda-forge
+dependencies:
+  - cartopy
+  - cis
+  - dask
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - xarray
+  - tqdm
+  - fair
+prefix: /glade/work/jnug/conda-envs/esem-env

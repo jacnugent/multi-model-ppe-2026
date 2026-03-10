@@ -1,0 +1,14 @@
+name: xesmf_env
+channels:
+  - conda-forge
+dependencies:
+  - xesmf
+  - scipy
+  - ipykernel
+  - matplotlib
+  - cartopy
+  - h5netcdf
+  - netcdf4
+  - dask
+  - statsmodels
+prefix: /glade/work/jnug/conda-envs/xesmf_env
