@@ -28,17 +28,17 @@ Processed data files for this paper can be found at (**TODO: put the Zotero link
 * [summary_fig.ipynb](): plot the summary figure included with the 1-page structured abstract
 
 ### Python Scripts
-* [e3sm_util.py](): helper functions for handling the E3SMv3 unstructured grid
+* [e3sm_util.py](python_scripts/e3sm_util.py): helper functions for handling the E3SMv3 unstructured grid
 * [fair_projections.py](): code to run the FaIR energy balance model and generate projections
 * [multi_ppe_constraint_rev.py](): helper functions for applying the obsevational constraints
 
 ### Environments
-* [ppe.yml](): conda virtual environment for most of the processing
-* [esem-env.yml](): conda virtual environment to run FaIR (`FaIR_projections_SSP*.ipynb`)
-* [xesmf_env.yml](): conda virtual environment to use xesmf regridding (`mask_PPE_CMIP6_files__new_E3SM.ipynb`)
+* [ppe.yml](ppe.yml): conda virtual environment for most of the processing
+* [esem-env.yml](esem-env.yml): conda virtual environment to run FaIR (`FaIR_projections_SSP*.ipynb`)
+* [xesmf_env.yml](xesmf_env.yml): conda virtual environment to use xesmf regridding (`mask_PPE_CMIP6_files__new_E3SM.ipynb`)
 
 ### Figures
-* [figures/](): Figs. 1-3; Figs. S1-S8; summary figure
+* [figures/](figures/): Figs. 1-3; Figs. S1-S8; summary figure
 
 ## References for FaIR:
 * FaIR documentation: https://docs.fairmodel.net/en/latest/index.html
