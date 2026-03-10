@@ -11,7 +11,7 @@ Processed data files for this paper can be found at (**TODO: put the Zotero link
 * [mask_PPE_CMIP6_files__new_E3SM.ipynb](): main notebook for data processing for the PPEs and CMIP6 models; masks land/ocean/convective regions as appropriate, regrids, and processes CMIP6 data
 * [calculate_constraints__new_E3SM.ipynb](): create `.pickle` files of which ensemble members meet which constraints and calculate the best-fit lines for the constrained ensembles
 * [Fig1_dLWP_ERFaci_PDLWP.ipynb](): plot Figure 1
-* [check_ukesm_ensn.ipynb](): find which observational constraint is not met by the UKESM1-GA7.1 ensemble member with large negative ∆LWP that does meet the PD LWP constraint
+* [check_ukesm_ensn.ipynb](notebooks/main_text/check_ukesm_ensn.ipynb): find which observational constraint is not met by the UKESM1-GA7.1 ensemble member with large negative ∆LWP that does meet the PD LWP constraint
 * [GPR_final_train_test_predict.ipynb](): main notebook for the Gaussian process regression; finds suitable kernels, calculates predicted credible intervals, and plots the validation figures
 * [Fig2_constrained_ranges.ipynb](): plot Figure 2
 * [FaIR_projections_SSP1-2.6](): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3
@@ -24,8 +24,8 @@ Processed data files for this paper can be found at (**TODO: put the Zotero link
 * [test_FaIR.ipynb](): test constraining the FaIR projections by alternate time periods
 
 #### Summary Figure
-* [get_MAC-LWP_for_fig.ipynb](): calculate annual mean observed liquid water path for the summary figure
-* [summary_fig.ipynb](): plot the summary figure included with the 1-page structured abstract
+* [get_MAC-LWP_for_fig.ipynb](notebooks/supplementary_and_summary/get_MAC-LWP_for_fig.ipynb): calculate annual mean observed liquid water path for the summary figure
+* [summary_fig.ipynb](notebooks/supplementary_and_summary/summary_fig.ipynb): plot the summary figure included with the 1-page structured abstract
 
 ### Python Scripts
 * [e3sm_util.py](python_scripts/e3sm_util.py): helper functions for handling the E3SMv3 unstructured grid
