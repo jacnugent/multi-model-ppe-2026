@@ -23,7 +23,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [FigS1_ens_constraints.ipynb](notebooks/supplementary_and_summary/FigS1_ens_constraints.ipynb): plot Figure S1
 * [FigS6_spatial_plots.ipynb](notebooks/supplementary_and_summary/FigS6_spatial_plots.ipynb): plot Figure S6
 * [FigS7_AOD_PI.ipynb](notebooks/supplementary_and_summary/FigS7_AOD_PI.ipynb): plot Figure S7
-* [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections by alternate time periods for GMST anomalies
+* [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections with alternate time periods for GMST anomalies - using the one from [Watson-Parris, 2025](https://doi.org/10.1029/2024GL114269)
 
 #### Summary Figure
 * [get_MAC-LWP_for_fig.ipynb](notebooks/supplementary_and_summary/get_MAC-LWP_for_fig.ipynb): calculate annual mean observed liquid water path for the summary figure
