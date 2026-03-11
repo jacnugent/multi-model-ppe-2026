@@ -1,7 +1,7 @@
 # multi-model-ppe-2026
 Code used in Nugent et al. (2026), in review at _Science_, on building an observationally constrained multi-model PPE to get an updated estimate of ERFaci when both structural and parametric uncertainty are taken into account. Brief descriptions of each file are included below.
 
-Processed data files for this paper can be found at (**TODO: put the Zotero link**). Notebooks for processing the original PPE/CMIP6 files are included here, but the unprocessed files are omitted from the data repository due to size constraints. 
+Processed data files and other files needed to reproduce the figures for this paper can be found at (**TODO: put the Dryad link**). Notebooks for processing the original PPE/CMIP6 files are included here, but the unprocessed files are omitted from the data repository due to size constraints. 
 
 ## Contents:
 ### Notebooks
