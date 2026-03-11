@@ -8,6 +8,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 #### Main Text Analysis/Figures
 
 * [areameanvsbellouin_from_DM.ipynb](notebooks/main_text/areameanvsbellouin_from_DM.ipynb): calculate the WCRP ∆lnLWP CI from [Bellouin et al., 2020](https://doi.org/10.1029/2019RG000660)
+* [fit_albedo_susceptibility.ipynb](notebooks/main_text/fit_albedo_susceptibility.ipynb): get the emergent relationship from [Song et al., 2024](https://doi.org/10.1029/2024GL108663) to calculate albedo susceptibility (da/dlwp) from PD LWP
 * [mask_PPE_CMIP6_files__new_E3SM.ipynb](notebooks/main_text/mask_PPE_CMIP6_files__new_E3SM.ipynb): main notebook for data processing for the PPEs and CMIP6 models; masks land/ocean/convective regions as appropriate, regrids, and processes CMIP6 data
 * [calculate_constraints__new_E3SM.ipynb](notebooks/main_text/calculate_constraints__new_E3SM.ipynb): create `.pickle` files of which ensemble members meet which constraints and calculate the best-fit lines for the constrained ensembles
 * [Fig1_dLWP_ERFaci_PDLWP.ipynb](notebooks/main_text/Fig1_dLWP_ERFaci_PDLWP.ipynb): plot Figure 1
