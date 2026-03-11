@@ -40,7 +40,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [xesmf_env.yml](xesmf_env.yml): conda virtual environment to use xesmf regridding (`mask_PPE_CMIP6_files__new_E3SM.ipynb`)
 
 ### Figures
-* [figures/](figures/): Figs. 1-3; Figs. S1-S8; summary figure
+* [figures/](figures/): Figs. 1-3; Figs. S1-S8; summary figure (Fig. 0)
 
 ## References for FaIR:
 * FaIR documentation: https://docs.fairmodel.net/en/latest/index.html
