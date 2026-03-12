@@ -11,23 +11,23 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [fit_albedo_susceptibility.ipynb](notebooks/main_text/fit_albedo_susceptibility.ipynb): get the emergent relationship from [Song et al., 2024](https://doi.org/10.1029/2024GL108663) to calculate albedo susceptibility (da/dlwp) from PD LWP
 * [mask_PPE_CMIP6_files__new_E3SM.ipynb](notebooks/main_text/mask_PPE_CMIP6_files__new_E3SM.ipynb): main notebook for data processing for the PPEs and CMIP6 models; masks land/ocean/convective regions as appropriate, regrids, and processes CMIP6 data
 * [calculate_constraints__new_E3SM.ipynb](notebooks/main_text/calculate_constraints__new_E3SM.ipynb): create `.pickle` files of which ensemble members meet which constraints and calculate the best-fit lines for the constrained ensembles
-* [Fig1_dLWP_ERFaci_PDLWP.ipynb](notebooks/main_text/Fig1_dLWP_ERFaci_PDLWP.ipynb): plot Figure 1 and Figs. S2-S3
+* [Fig1_dLWP_ERFaci_PDLWP.ipynb](notebooks/main_text/Fig1_dLWP_ERFaci_PDLWP.ipynb): plot Figure 1 and Figures S2-S3
 * [check_ukesm_ensn.ipynb](notebooks/main_text/check_ukesm_ensn.ipynb): find which observational constraint is not met by the UKESM1-GA7.1 ensemble member with large negative ∆LWP that does meet the PD LWP constraint
-* [GPR_final_train_test_predict.ipynb](notebooks/main_text/GPR_final_train_test_predict.ipynb): main notebook for the Gaussian process regression; finds suitable kernels, calculates predicted credible intervals, and plots the validation figures (Fig. S4)
+* [GPR_final_train_test_predict.ipynb](notebooks/main_text/GPR_final_train_test_predict.ipynb): main notebook for the Gaussian process regression; finds suitable kernels, calculates predicted credible intervals, and plots the validation figures (Figure S4)
 * [Fig2_constrained_ranges.ipynb](notebooks/main_text/Fig2_constrained_ranges.ipynb): plot Figure 2
-* [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3
+* [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3 and Figure S8
 
 #### Supplementary Analysis/Figures
-* [FaIR_projections_SSP2-4.5.ipynb](notebooks/supplementary_and_summary/FaIR_projections_SSP2-4.5.ipynb): generate the FaIR projections for SSP2-4.5 using CMIP6 model parameters (Fig. S5) and plot Figure S8
-* [final_GPR_sensitivity.ipynb](notebooks/supplementary_and_summary/final_GPR_sensitivity.ipynb): perform the leave-one-out sensitivity tests for the GP regression and save the predicted credible intervals
+* [FaIR_projections_SSP2-4.5.ipynb](notebooks/supplementary_and_summary/FaIR_projections_SSP2-4.5.ipynb): generate the FaIR projections for SSP2-4.5 using CMIP6 model parameters and plot Figure S5
+* [final_GPR_sensitivity.ipynb](notebooks/supplementary_and_summary/final_GPR_sensitivity.ipynb): perform the sensitivity tests for the GP regression and save the predicted credible intervals
 * [FigS1_ens_constraints.ipynb](notebooks/supplementary_and_summary/FigS1_ens_constraints.ipynb): plot Figure S1
 * [FigS6_spatial_plots.ipynb](notebooks/supplementary_and_summary/FigS6_spatial_plots.ipynb): plot Figure S6
 * [FigS7_AOD_PI.ipynb](notebooks/supplementary_and_summary/FigS7_AOD_PI.ipynb): plot Figure S7
-* [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections with alternate time periods for GMST anomalies - using the one from [Watson-Parris, 2025](https://doi.org/10.1029/2024GL114269)
+* [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections with alternate time periods for the historical temperature record, using the temperature constraint from [Watson-Parris, 2025](https://doi.org/10.1029/2024GL114269)
 
 #### Summary Figure
-* [get_MAC-LWP_for_fig.ipynb](notebooks/supplementary_and_summary/get_MAC-LWP_for_fig.ipynb): calculate annual mean observed liquid water path for the summary figure
-* [summary_fig.ipynb](notebooks/supplementary_and_summary/summary_fig.ipynb): plot the summary figure included with the 1-page structured abstract
+* [get_MAC-LWP_for_fig.ipynb](notebooks/supplementary_and_summary/get_MAC-LWP_for_fig.ipynb): calculate annual mean observed liquid water path from MAC-LWP observations for the summary figure
+* [summary_fig.ipynb](notebooks/supplementary_and_summary/summary_fig.ipynb): plot the summary figure (Figure 0) included with the 1-page structured abstract
 
 ### Python Scripts
 * [e3sm_util.py](python_scripts/e3sm_util.py): helper functions for handling the E3SMv3 unstructured grid
@@ -40,7 +40,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [xesmf_env.yml](xesmf_env.yml): conda virtual environment to use xesmf regridding (`mask_PPE_CMIP6_files__new_E3SM.ipynb`)
 
 ### Figures
-* [figures/](figures/): Figs. 1-3; Figs. S1-S8; summary figure (Fig. 0)
+* [figures/](figures/): main text Figures 1-3; supplementary Figures S1-S8; summary figure (Figure 0)
 
 ## References for FaIR:
 * FaIR documentation: https://docs.fairmodel.net/en/latest/index.html
