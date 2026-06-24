@@ -1,7 +1,7 @@
 # multi-model-ppe-2026
 [![DOI](https://zenodo.org/badge/1178300590.svg)](https://doi.org/10.5281/zenodo.19057619)
 
-Code used in Nugent et al. (2026), in review at _Science_, on building an observationally constrained multi-model PPE to get an updated estimate of ERFaci when both structural and parametric uncertainty are taken into account. Brief descriptions of each file are included below.
+Code used in Nugent et al. (2026), in review at _Science_, on building an observationally constrained multi-model PPE to get an updated estimate of ERFaci (aka ERF_ACI) when both structural and parametric uncertainty are taken into account. Brief descriptions of each file are included below.
 
 Processed data files and other files needed to reproduce the figures for this paper are hosted on Dryad ([doi:10.5061/dryad.rbnzs7hr0](https://doi.org/10.5061/dryad.rbnzs7hr0)). Notebooks for processing the original PPE/CMIP6 files are included here, but the unprocessed files are omitted from the data repository due to size constraints. More information on how to access the original/unprocessed files is provided in the README for the Dryad data repository.
 
@@ -17,7 +17,8 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [check_ukesm_ensn.ipynb](notebooks/main_text/check_ukesm_ensn.ipynb): find which observational constraint is not met by the UKESM1-GA7.1 ensemble member with large negative ∆LWP that does meet the PD LWP constraint
 * [GPR_final_train_test_predict.ipynb](notebooks/main_text/GPR_final_train_test_predict.ipynb): main notebook for the Gaussian process regression; finds suitable kernels, calculates predicted credible intervals, and plots the validation figures (Figure S4)
 * [Fig2_constrained_ranges.ipynb](notebooks/main_text/Fig2_constrained_ranges.ipynb): plot Figure 2
-* [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3 and Figure S8
+* [lambda_ECS_fit.ipynb](notebook/main_text/lambda_ECS_fit.ipynb): generate and sample from a climate feedback parameter distribution that corresponds to the [Sherwood et al., 2020](https://doi.org/10.1029/2019RG000678) ECS posterior distribution and plot Figure S8
+* [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3 and Figure S9
 
 #### Supplementary Analysis/Figures
 * [FaIR_projections_SSP2-4.5.ipynb](notebooks/supplementary_and_summary/FaIR_projections_SSP2-4.5.ipynb): generate the FaIR projections for SSP2-4.5 using CMIP6 model parameters and plot Figure S5
@@ -25,6 +26,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [FigS1_ens_constraints.ipynb](notebooks/supplementary_and_summary/FigS1_ens_constraints.ipynb): plot Figure S1
 * [FigS6_spatial_plots.ipynb](notebooks/supplementary_and_summary/FigS6_spatial_plots.ipynb): plot Figure S6
 * [FigS7_AOD_PI.ipynb](notebooks/supplementary_and_summary/FigS7_AOD_PI.ipynb): plot Figure S7
+* [FaIR_constant_ECS_ERFaci.ipynb](notebooks/supplementary_and_summary/FaIR_constant_ECS_ERFaci.ipynb): test how future temperature projections change if only ERFaci updates (ECS posterior kept the same) and plot Figure S10
 * [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections with alternate time periods for the historical temperature record, using the temperature constraint from [Watson-Parris, 2025](https://doi.org/10.1029/2024GL114269)
 
 #### Summary Figure
