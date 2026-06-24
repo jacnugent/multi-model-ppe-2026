@@ -21,11 +21,11 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3 and Figure S9
 
 #### Supplementary Analysis/Figures
-* [FaIR_projections_SSP2-4.5.ipynb](notebooks/supplementary_and_summary/FaIR_projections_SSP2-4.5.ipynb): generate the FaIR projections for SSP2-4.5 using CMIP6 model parameters and plot Figure S5
+* [FaIR_projections_SSP2-4.5.ipynb](notebooks/supplementary_and_summary/FaIR_projections_SSP2-4.5.ipynb): generate the FaIR projections for SSP2-4.5 using CMIP6 model parameters and plot Figure S7
 * [final_GPR_sensitivity.ipynb](notebooks/supplementary_and_summary/final_GPR_sensitivity.ipynb): perform the sensitivity tests for the GP regression and save the predicted credible intervals
 * [FigS1_ens_constraints.ipynb](notebooks/supplementary_and_summary/FigS1_ens_constraints.ipynb): plot Figure S1
 * [FigS6_spatial_plots.ipynb](notebooks/supplementary_and_summary/FigS6_spatial_plots.ipynb): plot Figure S6
-* [FigS7_AOD_PI.ipynb](notebooks/supplementary_and_summary/FigS7_AOD_PI.ipynb): plot Figure S7
+* [FigS5_AOD_PI.ipynb](notebooks/supplementary_and_summary/FigS5_AOD_PI.ipynb): plot Figure S5
 * [FaIR_constant_ECS_ERFaci.ipynb](notebooks/supplementary_and_summary/FaIR_constant_ECS_ERFaci.ipynb): test how future temperature projections change if only ERFaci updates (ECS posterior kept the same) and plot Figure S10
 * [test_FaIR.ipynb](notebooks/supplementary_and_summary/test_FaIR.ipynb): test constraining the FaIR projections with alternate time periods for the historical temperature record, using the temperature constraint from [Watson-Parris, 2025](https://doi.org/10.1029/2024GL114269)
 
