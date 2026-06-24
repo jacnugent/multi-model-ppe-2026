@@ -17,7 +17,7 @@ Processed data files and other files needed to reproduce the figures for this pa
 * [check_ukesm_ensn.ipynb](notebooks/main_text/check_ukesm_ensn.ipynb): find which observational constraint is not met by the UKESM1-GA7.1 ensemble member with large negative ∆LWP that does meet the PD LWP constraint
 * [GPR_final_train_test_predict.ipynb](notebooks/main_text/GPR_final_train_test_predict.ipynb): main notebook for the Gaussian process regression; finds suitable kernels, calculates predicted credible intervals, and plots the validation figures (Figure S4)
 * [Fig2_constrained_ranges.ipynb](notebooks/main_text/Fig2_constrained_ranges.ipynb): plot Figure 2
-* [lambda_ECS_fit.ipynb](notebook/main_text/lambda_ECS_fit.ipynb): generate and sample from a climate feedback parameter distribution that corresponds to the [Sherwood et al., 2020](https://doi.org/10.1029/2019RG000678) ECS posterior distribution and plot Figure S8
+* [lambda_ECS_fit.ipynb](notebooks/main_text/lambda_ECS_fit.ipynb): generate and sample from a climate feedback parameter distribution that corresponds to the [Sherwood et al., 2020](https://doi.org/10.1029/2019RG000678) ECS posterior distribution and plot Figure S8
 * [FaIR_projections_SSP1-2.6.ipynb](notebooks/main_text/FaIR_projections_SSP1-2.6.ipynb): generate the FaIR projections for SSP1-2.6 using CMIP6 model parameters and plot Figure 3 and Figure S9
 
 #### Supplementary Analysis/Figures
