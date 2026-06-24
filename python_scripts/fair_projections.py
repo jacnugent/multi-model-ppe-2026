@@ -98,8 +98,8 @@ def calc_temperatures(climate_feedback, scaled_ERFaci, scaled_ERFari, historical
 
 
 
-def get_save_temp_projections(model, cf_min=0.76, cf_max=1.72, ssp=126, seed=20250630, fair_out=FAIR_OUT,
-                             erfaci_ci90=[-2.65, -0.07], erfari_ci90=[-0.71, -0.14], index=0, file_path=FILE_PATH):
+def get_save_temp_projections(model, cf_sample=None, cf_min=0.76, cf_max=1.72, ssp=126, seed=20250630, fair_out=FAIR_OUT,
+                             erfaci_ci90=[-2.65, -0.07], erfari_ci90=[-0.71, -0.14], index=0, file_path=FILE_PATH, show_plot=True):
     # Get the requested model parameters
     model_params = pd.read_csv(f'{file_path}/4xCO2_cummins_ebm3.csv',index_col=['model']).loc[model]
 
@@ -129,7 +129,11 @@ def get_save_temp_projections(model, cf_min=0.76, cf_max=1.72, ssp=126, seed=202
     erfari_scaled = scale_ari_forcing(erfari_df, df_forcing=df_forcing).ERFari
 
     # climate feedback
-    climate_feedback = get_pdf90(lower=cf_min, upper=cf_max, rng=rng)
+    # new!
+    if cf_sample is None:
+        climate_feedback = get_pdf90(lower=cf_min, upper=cf_max, rng=rng)
+    else:
+        climate_feedback = cf_sample
     climate_feedback_df = pd.DataFrame(climate_feedback, columns=['climate_feedback'])
 
 
@@ -190,18 +194,19 @@ def get_save_temp_projections(model, cf_min=0.76, cf_max=1.72, ssp=126, seed=202
     dTh_da = xr.DataArray(dTh, dims=["ensemble"], coords={"ensemble": proj_temps.ensemble})
     dTf_da = xr.DataArray(dTf, dims=["ensemble"], coords={"ensemble": proj_temps.ensemble})
 
-    # quick scatterplot
-    erfaer = erfaci_da + erfari_da
-    plt.scatter(dTh_da.sortby(dTf_da), erfaer.sortby(dTf_da), c=dTf.sortby(dTf_da),  cmap="Spectral_r", alpha=0.75, vmin=-.3, vmax=6)
-    plt.axhline(-1, color="C0")
-    plt.axvline(0.6, color="C0")
-    plt.axvline(0, color="gray", ls=":")
-    plt.axvline(1.4, color="gray", ls=":")
-    plt.axhline(-1.8, color="gray", ls=":")
-    plt.axhline(-0.3, color="gray", ls=":")
-    plt.title(model)
-    plt.colorbar()
-    plt.show()
+    if show_plot:
+        # quick scatterplot
+        erfaer = erfaci_da + erfari_da
+        plt.scatter(dTh_da.sortby(dTf_da), erfaer.sortby(dTf_da), c=dTf.sortby(dTf_da),  cmap="Spectral_r", alpha=0.75, vmin=-.3, vmax=6)
+        plt.axhline(-1, color="C0")
+        plt.axvline(0.6, color="C0")
+        plt.axvline(0, color="gray", ls=":")
+        plt.axvline(1.4, color="gray", ls=":")
+        plt.axhline(-1.8, color="gray", ls=":")
+        plt.axhline(-0.3, color="gray", ls=":")
+        plt.title(model)
+        plt.colorbar()
+        plt.show()
     
     return ds
 
