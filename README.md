@@ -48,6 +48,9 @@ Processed data files and other files needed to reproduce the figures for this pa
 
 ## References for FaIR:
 * FaIR documentation: https://docs.fairmodel.net/en/latest/index.html
-* FaIR publications:
+* FaIR software publications:
    * Leach, N. J., Jenkins, S., Nicholls, Z., Smith, C. J., Lynch, J., Cain, M., Walsh, T., Wu, B., Tsutsui, J., and Allen, M. R.: FaIRv2.0.0: a generalized impulse response model for climate uncertainty and future scenario exploration, Geosci. Model Dev., 14, 3007--3036, https://doi.org/10.5194/gmd-14-3007-2021, 2021
    * Smith, C. J., Forster, P. M., Allen, M., Leach, N., Millar, R. J., Passerello, G. A., and Regayre, L. A.: FAIR v1.3: A simple emissions-based impulse response and carbon cycle model, Geosci. Model Dev., https://doi.org/10.5194/gmd-11-2273-2018, 2018.
+* Sherwood et al. publication and data (used to generate the climate feedback parameter samples in the application of FaIR for this analysis):
+  * Sherwood, S. C., Webb, M. J., Annan, J. D., Armour, K. C., Forster, P. M., Hargreaves, J. C., et al. (2020). An assessment of Earth's climate sensitivity using multiple lines of evidence. Reviews of Geophysics, 58, e2019RG000678. https://doi.org/10.1029/2019RG000678
+  * Mark Webb. (2022). Code and Data for WCRP Climate Sensitivity Assessment (Corrected Version, December 2022) (Version CorrectionDec2022). Zenodo. https://doi.org/10.5281/zenodo.7448497
