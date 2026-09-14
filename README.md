@@ -1,5 +1,5 @@
 # multi-model-ppe-2026
-[![DOI](https://zenodo.org/badge/1178300590.svg)](https://doi.org/10.5281/zenodo.19057619)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22758621.svg)](https://doi.org/10.5281/zenodo.22758621)
 
 Code used in Nugent et al. (2026), in review at _Science_, on building an observationally constrained multi-model PPE to get an updated estimate of ERFaci (aka ERF_ACI) when both structural and parametric uncertainty are taken into account. Brief descriptions of each file are included below.
 
